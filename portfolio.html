@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>My Projects</h1>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="index.html">About Me</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="files/resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="files/cert.pdf" target="_blank">Achievements</a></li>
+            </ul>
+            <a href="contact.html" class="btn-contact">Get In Touch</a>
+        </div>
+    </nav>
 
-    <section id="portfolio">
-        <h2>Project 1: Task Manager App</h2>
-        <p>Description of the Task Manager App project...</p>
-
-        <h2>Project 2: Car Sales Portal</h2>
-        <p>Description of the Car Sales Portal project...</p>
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-item">
+                <img src="images/music.gif" alt="Project 1">
+                <h2>Discord Music Bot</h2>
+                <p>This Discord Music Bot allows users to play music in voice channels directly from various sources, including YouTube and Spotify. It features commands for playing, pausing, skipping, and stopping music, along with a queue system for managing multiple tracks. The bot is designed to enhance the listening experience in Discord servers, making it easy for users to enjoy music together in real time.</p>
+                <a href="https://github.com/khooch01/discord_music_bot" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/project2.PNG" alt="Company Website">
+                <h2>Company Website</h2>
+                <p>This project involved creating a fully functional website for a company using Hostinger. The site features an attractive design, user-friendly navigation, and essential information about the company's services. The goal was to enhance the company's online presence and provide users with easy access to information.</p>
+                <a href="https://www.lmpgr.tech/" target="_blank" class="btn">View Project</a>
+            </div>            
+            <div class="portfolio-item">
+                <img src="images/project3.PNG" alt="Project 3">
+                <h2>Know Your Neighborhood</h2>
+                <p>The Know Your Neighborhood application provides a platform for residents to access and share information about their local area. Users can log in using Auth0, view and update their profiles, and access various community resources.</p>
+                <a href="https://github.com/khooch01/TaskManager/tree/know-your-neighborhood" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <p>&copy; 2024 Khoo Chien Hang</p>
     </footer>
 </body>
+
 </html>
